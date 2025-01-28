@@ -1,0 +1,20 @@
+*.swp
+package-lock.json
+__pycache__
+.pytest_cache
+*.egg-info
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+# 1 Password cli files
+.op
+
+frontend/node_modules
+
+# OS files
+.DS_Store
+
+# Backend environment files
+backend/venv
