@@ -88,6 +88,28 @@ Start apache serverapachectl
 sudo apachectl start
 ```
 
+Follow the steps here: https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/module-one/
+
+
+
+Create skeleton react app
+```
+npm create vite@latest notesapp -- --template react
+```
+
+Scaffolding project in /Users/julianleonard/repos/case-study/frontend/notesapp...
+
+Done. Now run:
+
+  cd notesapp
+  npm install
+  npm run dev
+
+Install amplify libraries
+```
+npm create amplify@latest -y
+```
+
 WSGIScriptAlias / /Users/julianleonard/repos/case-study/backend/mysite/mysite/wsgi.py
 WSGIPythonHome /Users/julianleonard/repos/case-study/backend/venv
 WSGIPythonPath /Users/julianleonard/repos/case-study/backend/mysite
