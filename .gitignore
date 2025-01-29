@@ -19,3 +19,5 @@ frontend/node_modules
 # Python environment files
 infra/venv
 backend/venv
+backend/api/package
+!backend/api/package/api.py
