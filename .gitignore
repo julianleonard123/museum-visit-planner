@@ -16,5 +16,6 @@ frontend/node_modules
 # OS files
 .DS_Store
 
-# Backend environment files
+# Python environment files
+infra/venv
 backend/venv
