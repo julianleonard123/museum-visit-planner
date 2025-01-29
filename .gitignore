@@ -11,8 +11,6 @@ cdk.out
 # 1 Password cli files
 .op
 
-frontend/node_modules
-
 # OS files
 .DS_Store
 
@@ -21,3 +19,6 @@ infra/venv
 backend/venv
 backend/api/package
 !backend/api/package/api.py
+
+**/package/*
+**/node_modules/*

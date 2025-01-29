@@ -74,3 +74,10 @@ Use AWS Amplify to host the Web app.
 
 
 Provision a user in my AWS account with Admin access
+
+
+Just use a single api gateway stage: prod - would use multiple in a real environment.
+
+Consider using `aws_lambda_python_alpha` for better bundling.
+
+Bump to a newer version of Python?

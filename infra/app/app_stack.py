@@ -7,8 +7,9 @@ from aws_cdk import (
     Stack,
     aws_dynamodb as dynamodb,
     aws_lambda as lambda_,
-    aws_apigateway as apigateway
+    aws_apigateway as apigateway,
 )
+# from aws_cdk.aws_lambda_python_alpha import PythonFunction
 from constructs import Construct
 
 class AppStack(Stack):
@@ -24,32 +25,34 @@ class AppStack(Stack):
             removal_policy=RemovalPolicy.DESTROY
         )
 
+        # copy the lambda source code files into the package folder so it sits next to the installed dependencies when packaged.
+        subprocess.run(["cp", "../backend/api-lambda/app.py", "../backend/api-lambda/package/app.py"])
+        subprocess.run(["cp", "../backend/import-lambda/lambda.py", "../backend/import-lambda/package/lambda.py"])
 
-        # Define the Lambda source code directory
-        lambda_dir = "../backend/api/package"
-
-        # Install dependencies in a package directory inside "lambda/"
-        # requirements_path = os.path.join(lambda_dir, "requirements.txt")
-        # package_dir = os.path.join(lambda_dir, "package")
-
-        # if not os.path.exists(package_dir):
-        #     os.mkdir(package_dir)
-
-        # subprocess.run(
-        #     f"pip install -r {requirements_path} -t {lambda_dir}", 
-        #     shell=True, check=True
-        # )
-
-        # Define the Lambda function
+        # Define the API Lambda function
         fastapi_lambda = lambda_.Function(
             self, "getExhibitionsLambda",
             runtime=lambda_.Runtime.PYTHON_3_9,
             handler="app.handler",
-            code=lambda_.Code.from_asset(lambda_dir),
+            code=lambda_.Code.from_asset("../backend/api-lambda/package"),
             memory_size=128,
             timeout=Duration.seconds(5),
             architecture=lambda_.Architecture.ARM_64
         )
+
+        # Define the Exhibition Import Lambda function
+        import_lambda = lambda_.Function(
+            self, "importExhibitionsLambda",
+            runtime=lambda_.Runtime.PYTHON_3_9,
+            handler="lambda.lambda_handler",
+            code=lambda_.Code.from_asset("../backend/import-lambda/package"),
+            memory_size=256,
+            timeout=Duration.seconds(60),
+            architecture=lambda_.Architecture.ARM_64
+        )
+
+        table.grant_write_data(import_lambda)
+        table.grant_read_data(fastapi_lambda)
 
         # Create an API Gateway to expose the Lambda function
         api = apigateway.LambdaRestApi(

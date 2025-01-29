@@ -119,3 +119,11 @@ WSGIPythonPath /Users/julianleonard/repos/case-study/backend/mysite
 Require all granted
 </Files>
 </Directory>
+
+
+
+ docker run --rm -v $(pwd)/api-lambda:/api-lambda -w /api-lambda amazonlinux:latest \
+    bash -c "yum install -y python3-pip && pip3 install -r requirements.txt -t package/"
+
+   docker run --rm -v $(pwd)/import-lambda:/import-lambda -w /import-lambda amazonlinux:latest \
+    bash -c "yum install -y python3-pip && pip3 install -r requirements.txt -t package/"
