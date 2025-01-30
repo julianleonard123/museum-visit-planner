@@ -34,7 +34,7 @@ I use 1Password to manage my AWS credential, which also supports the cdk.
 
 I bootstrapped my cdk environment with this command:
 ```
-cdk bootstrap aws://247411243287/eu-central-1
+cdk bootstrap aws://<aws-account-id>/eu-central-1
 ```
 
 
@@ -81,3 +81,11 @@ Just use a single api gateway stage: prod - would use multiple in a real environ
 Consider using `aws_lambda_python_alpha` for better bundling.
 
 Bump to a newer version of Python?
+
+Security - using secrets for API key.
+
+
+Tighten up model for validation e.g. what fields are expected/required.
+
+
+Error handling...

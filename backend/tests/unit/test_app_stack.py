@@ -1,7 +1,7 @@
 import aws_cdk as core
 import aws_cdk.assertions as assertions
 
-from app.app_stack import AppStack
+from cdkapp.app_stack import AppStack
 
 # example tests. To run these tests, uncomment this file along with the example
 # resource in app/app_stack.py

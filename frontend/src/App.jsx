@@ -5,8 +5,9 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const EXHIBITIONS_API = "https://ug5u8avkf7.execute-api.eu-central-1.amazonaws.com/prod/exhibitions";
     // Fetch data using the native fetch API
-    fetch("https://ug5u8avkf7.execute-api.eu-central-1.amazonaws.com/prod/exhibitions")
+    fetch(EXHIBITIONS_API)
       .then((response) => response.json())
       .then((data) => {
         setData(data);  // Update state with fetched data
@@ -27,7 +28,7 @@ function App() {
       ) : (
         <ul>
           {data.map((item, index) => (
-            <li key={index}>{item.name} {item.city}</li>  // Render items from API response
+            <li key={index}>{item.title} {item.shortdescription}</li>  // Render items from API response
           ))}
         </ul>
       )}

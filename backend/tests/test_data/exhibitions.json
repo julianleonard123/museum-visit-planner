@@ -1,0 +1,406 @@
+{
+    "info": {
+        "totalrecordsperquery": 10,
+        "totalrecords": 12,
+        "pages": 2,
+        "page": 1,
+        "next": "https://api.harvardartmuseums.org/exhibition?apikey=f0a5aaca-ec97-4688-93a0-045367727c78&status=current&page=2",
+        "responsetime": "7 ms"
+    },
+    "records": [
+        {
+            "shortdescription": null,
+            "htmldescription": null,
+            "begindate": "2024-04-26",
+            "color": null,
+            "description": null,
+            "exhibitionid": 6027,
+            "title": "Brilliant Exiles: American Women in Paris, 1900-1939",
+            "temporalorder": 4937,
+            "url": "https://www.harvardartmuseums.org/visit/exhibitions/6027",
+            "textiledescription": null,
+            "enddate": "2025-02-23",
+            "venues": [
+                {
+                    "zipcode": "20560",
+                    "country": null,
+                    "begindate": "2024-04-26",
+                    "enddate": "2025-02-23",
+                    "address2": null,
+                    "city": "Washington",
+                    "address1": "8th and F Street, N.W.",
+                    "venueid": 10275,
+                    "ishamvenue": 0,
+                    "name": "NATIONALPORTRAITGALLERY",
+                    "fullname": "National Portrait Gallery",
+                    "state": "DC"
+                },
+                {
+                    "zipcode": null,
+                    "country": null,
+                    "begindate": "2025-03-29",
+                    "enddate": "2025-06-22",
+                    "address2": null,
+                    "city": null,
+                    "address1": null,
+                    "venueid": 6265,
+                    "ishamvenue": 0,
+                    "name": "SPEEDARTMUSEUM",
+                    "fullname": "Speed Art Museum",
+                    "state": null
+                },
+                {
+                    "zipcode": null,
+                    "country": null,
+                    "begindate": "2025-07-19",
+                    "enddate": "2025-10-12",
+                    "address2": null,
+                    "city": null,
+                    "address1": null,
+                    "venueid": 10295,
+                    "ishamvenue": 0,
+                    "name": "GEORGIAMUSEUMOFART",
+                    "fullname": "Georgia Museum of Art",
+                    "state": null
+                }
+            ],
+            "id": 6027,
+            "lastupdate": "2025-01-27T13:06:47-0500"
+        },
+        {
+            "shortdescription": "Experience the Harvard Art Museums’ historical collections through fresh eyes in a one-of-a kind installation by contemporary American sculptor Arlene Shechet.",
+            "htmldescription": "<p style=\"text-align:center;\"><strong>Experience the Harvard Art Museums’ historical collections through fresh eyes in a one-of-a kind installation by contemporary American sculptor Arlene Shechet.</strong> </p>\n\n<p>By presenting her recent work alongside historical German, Japanese, and Chinese examples, sculptor <a href=\"https://www.arleneshechet.net/\">Arlene Shechet</a> encourages us to look anew at works of porcelain and other objects from the Harvard Art Museums. Decorative arts are typically displayed in museum galleries dedicated to the same culture and period, often in isolation from other media. In <em>Disrupt the View</em>, however, Shechet draws on her past collaborations with porcelain manufactory workers to speak to a larger history, recontextualizing these remarkable objects as both handmade and industrially manufactured, painterly and sculptural. </p>\n\n<p>Invented by Chinese potters in the Tang Dynasty (618–903 CE), porcelain later became one of the first global luxury products. It was at first available in Europe only to the wealthiest patrons, but by the late 17th century, millions of porcelain objects were being imported each year by the Dutch East India Company. European porcelain production was driven by courtly ambition in competition with Asian markets, and its artisans, who created these objects for lavish celebrations, were largely unknown. The story of porcelain, then, is one of labor, class, and global trade. In 1710, the German porcelain manufactory Meissen was founded, and significant examples of its 18th-century tableware and figurines are now in the Busch-Reisinger Museum collection. Many of these objects have rarely, if ever, been shown. </p>\n\n<p>Among other objects, Shechet has created an unparalleled installation that includes two constellations of tableware that emphasize the unique material qualities of plates as sculptural design. Visible from the exterior of the museums, these arrangements, like the painted decoration on the individual plates, invite the outside in and—literally and metaphorically—disrupt the view. </p>\n\n<p>Organized by <strong>Lynette Roth</strong>, Daimler Curator of the Busch-Reisinger Museum; <strong>Jessica Ficken</strong>, Assistant Curator of the Collection in the Division of Modern and Contemporary Art; and <strong>Gabriella Szalay</strong>, former Renke B. and Pamela M. Thye Curatorial Fellow in the Busch-Reisinger Museum (2018–20). Special thanks to colleagues in the following departments: Collections Management, especially Jill Comer, Steve Deane, Francine Flynn, and Elie Glyn; Communications; Design; Editorial; Facilities; Security, especially Nilton Barbosa; Straus Center for Conservation and Technical Studies, especially Cassia Balogh, Angela Chang, Susan Costello, Haddon Dine, Cindy Moreno, and Tony Sigel; and Visitor Services. </p>\n\n<p>This installation is supported by the Charles Kuhn Endowment Fund in the Busch-Reisinger Museum. Modern and contemporary art programs at the Harvard Art Museums are made possible in part by generous support from the Emily Rauh Pulitzer and Joseph Pulitzer, Jr., Fund for Modern and Contemporary Art. </p>\n\n<p><strong>Online Resource</strong></p>\n\n<p>A recording of the lecture <em>Disrupt the View</em>: A Conversation with Arlene Shechet, held at the Harvard Art Museums on October 7, 2022, is available to watch on <a href=\"https://youtu.be/toSskdmZ4_U\">YouTube</a> and on <a href=\"https://vimeo.com/759969582\">Vimeo</a>. </p>",
+            "images": [
+                {
+                    "date": "2022-09-01",
+                    "copyright": "Arlene Shechet; Image courtesy of the artist.",
+                    "imageid": 531491,
+                    "idsid": 495321462,
+                    "format": "image/jpeg",
+                    "caption": "“Polymnia” (c. 1744-45), a Meissen porcelain figure from the collection of the Busch-Reisinger Museum, beside Arlene Shechet’s “Sexy Baby Eyes” (2012). © Arlene Shechet; image courtesy of the artist.",
+                    "description": null,
+                    "technique": null,
+                    "renditionnumber": "LEG279508",
+                    "displayorder": 1,
+                    "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:LEG279508",
+                    "alttext": "A photograph of a porcelain figure produced by the Meissen Porcelain Manufactory and a porcelain abstract sculpture by artist Arlene Shechet.",
+                    "width": 2550,
+                    "iiifbaseuri": "https://ids.lib.harvard.edu/ids/iiif/495321462",
+                    "height": 1924
+                }
+            ],
+            "begindate": "2022-07-01",
+            "color": null,
+            "description": "Experience the Harvard Art Museums’ historical collections through fresh eyes in a one-of-a kind installation by contemporary American sculptor Arlene Shechet. \n\nBy presenting her recent work alongside historical German, Japanese, and Chinese examples, sculptor Arlene Shechet encourages us to look anew at works of porcelain and other objects from the Harvard Art Museums. Decorative arts are typically displayed in museum galleries dedicated to the same culture and period, often in isolation from other media. In Disrupt the View, however, Shechet draws on her past collaborations with porcelain manufactory workers to speak to a larger history, recontextualizing these remarkable objects as both handmade and industrially manufactured, painterly and sculptural. \n\nInvented by Chinese potters in the Tang Dynasty (618–903 CE), porcelain later became one of the first global luxury products. It was at first available in Europe only to the wealthiest patrons, but by the late 17th century, millions of porcelain objects were being imported each year by the Dutch East India Company. European porcelain production was driven by courtly ambition in competition with Asian markets, and its artisans, who created these objects for lavish celebrations, were largely unknown. The story of porcelain, then, is one of labor, class, and global trade. In 1710, the German porcelain manufactory Meissen was founded, and significant examples of its 18th-century tableware and figurines are now in the Busch-Reisinger Museum collection. Many of these objects have rarely, if ever, been shown. \n\nAmong other objects, Shechet has created an unparalleled installation that includes two constellations of tableware that emphasize the unique material qualities of plates as sculptural design. Visible from the exterior of the museums, these arrangements, like the painted decoration on the individual plates, invite the outside in and—literally and metaphorically—disrupt the view. \n\nOrganized by Lynette Roth, Daimler Curator of the Busch-Reisinger Museum; Jessica Ficken, Assistant Curator of the Collection in the Division of Modern and Contemporary Art; and Gabriella Szalay, former Renke B. and Pamela M. Thye Curatorial Fellow in the Busch-Reisinger Museum (2018–20). Special thanks to colleagues in the following departments: Collections Management, especially Jill Comer, Steve Deane, Francine Flynn, and Elie Glyn; Communications; Design; Editorial; Facilities; Security, especially Nilton Barbosa; Straus Center for Conservation and Technical Studies, especially Cassia Balogh, Angela Chang, Susan Costello, Haddon Dine, Cindy Moreno, and Tony Sigel; and Visitor Services. \n\nThis installation is supported by the Charles Kuhn Endowment Fund in the Busch-Reisinger Museum. Modern and contemporary art programs at the Harvard Art Museums are made possible in part by generous support from the Emily Rauh Pulitzer and Joseph Pulitzer, Jr., Fund for Modern and Contemporary Art. \n\nOnline Resource\n\nA recording of the lecture Disrupt the View: A Conversation with Arlene Shechet, held at the Harvard Art Museums on October 7, 2022, is available to watch on YouTube and on Vimeo. ",
+            "exhibitionid": 6177,
+            "title": "Disrupt the View: Arlene Shechet at the Harvard Art Museums",
+            "primaryimageurl": "https://nrs.harvard.edu/urn-3:HUAM:LEG279508",
+            "people": [
+                {
+                    "role": "Curator",
+                    "prefix": "Curated by",
+                    "displayname": "Curated by Lynette Roth",
+                    "name": "Lynette Roth",
+                    "personid": 56190,
+                    "displayorder": 1
+                }
+            ],
+            "temporalorder": 4874,
+            "url": "https://www.harvardartmuseums.org/visit/exhibitions/6177",
+            "textiledescription": "p=. *Experience the Harvard Art Museums’ historical collections through fresh eyes in a one-of-a kind installation by contemporary American sculptor Arlene Shechet.* \r\n\r\nBy presenting her recent work alongside historical German, Japanese, and Chinese examples, sculptor \"Arlene Shechet\":https://www.arleneshechet.net/ encourages us to look anew at works of porcelain and other objects from the Harvard Art Museums. Decorative arts are typically displayed in museum galleries dedicated to the same culture and period, often in isolation from other media. In _Disrupt the View_, however, Shechet draws on her past collaborations with porcelain manufactory workers to speak to a larger history, recontextualizing these remarkable objects as both handmade and industrially manufactured, painterly and sculptural. \r\n\r\nInvented by Chinese potters in the Tang Dynasty (618–903 CE), porcelain later became one of the first global luxury products. It was at first available in Europe only to the wealthiest patrons, but by the late 17th century, millions of porcelain objects were being imported each year by the Dutch East India Company. European porcelain production was driven by courtly ambition in competition with Asian markets, and its artisans, who created these objects for lavish celebrations, were largely unknown. The story of porcelain, then, is one of labor, class, and global trade. In 1710, the German porcelain manufactory Meissen was founded, and significant examples of its 18th-century tableware and figurines are now in the Busch-Reisinger Museum collection. Many of these objects have rarely, if ever, been shown. \r\n\r\nAmong other objects, Shechet has created an unparalleled installation that includes two constellations of tableware that emphasize the unique material qualities of plates as sculptural design. Visible from the exterior of the museums, these arrangements, like the painted decoration on the individual plates, invite the outside in and—literally and metaphorically—disrupt the view. \r\n\r\nOrganized by *Lynette Roth*, Daimler Curator of the Busch-Reisinger Museum; *Jessica Ficken*, Assistant Curator of the Collection in the Division of Modern and Contemporary Art; and *Gabriella Szalay*, former Renke B. and Pamela M. Thye Curatorial Fellow in the Busch-Reisinger Museum (2018–20). Special thanks to colleagues in the following departments: Collections Management, especially Jill Comer, Steve Deane, Francine Flynn, and Elie Glyn; Communications; Design; Editorial; Facilities; Security, especially Nilton Barbosa; Straus Center for Conservation and Technical Studies, especially Cassia Balogh, Angela Chang, Susan Costello, Haddon Dine, Cindy Moreno, and Tony Sigel; and Visitor Services. \r\n\r\nThis installation is supported by the Charles Kuhn Endowment Fund in the Busch-Reisinger Museum. Modern and contemporary art programs at the Harvard Art Museums are made possible in part by generous support from the Emily Rauh Pulitzer and Joseph Pulitzer, Jr., Fund for Modern and Contemporary Art. \r\n\r\n*Online Resource*\r\n\r\nA recording of the lecture _Disrupt the View_: A Conversation with Arlene Shechet, held at the Harvard Art Museums on October 7, 2022, is available to watch on \"YouTube\":https://youtu.be/toSskdmZ4_U and on \"Vimeo\":https://vimeo.com/759969582. ",
+            "enddate": "2025-07-06",
+            "venues": [
+                {
+                    "country": null,
+                    "begindate": "2022-07-01",
+                    "address2": null,
+                    "city": "Cambridge",
+                    "address1": "32 Quincy St.",
+                    "ishamvenue": 1,
+                    "zipcode": "02138",
+                    "enddate": "2025-07-06",
+                    "venueid": 55780,
+                    "name": "Harvard Art Museums",
+                    "fullname": "Harvard Art Museums",
+                    "state": "MA",
+                    "galleries": [
+                        {
+                            "gallerynumber": "1510",
+                            "galleryid": "1510",
+                            "name": "Modern and Contemporary Art",
+                            "floor": "1"
+                        }
+                    ]
+                }
+            ],
+            "id": 6177,
+            "lastupdate": "2025-01-27T13:06:47-0500",
+            "poster": {
+                "imageurl": "https://nrs.harvard.edu/urn-3:HUAM:LEG279508",
+                "caption": "“Polymnia” (c. 1744-45), a Meissen porcelain figure from the collection of the Busch-Reisinger Museum, beside Arlene Shechet’s “Sexy Baby Eyes” (2012). © Arlene Shechet; image courtesy of the artist."
+            }
+        },
+        {
+            "shortdescription": null,
+            "htmldescription": null,
+            "begindate": "2022-11-15",
+            "color": null,
+            "description": null,
+            "exhibitionid": 6212,
+            "title": "The Future of the Past. Fernando Zobel and the History of Art",
+            "temporalorder": 4892,
+            "url": "https://www.harvardartmuseums.org/visit/exhibitions/6212",
+            "textiledescription": null,
+            "enddate": "2025-02-23",
+            "venues": [
+                {
+                    "zipcode": null,
+                    "country": null,
+                    "begindate": "2022-11-15",
+                    "enddate": "2023-03-05",
+                    "address2": null,
+                    "city": null,
+                    "address1": null,
+                    "venueid": 43963,
+                    "ishamvenue": 0,
+                    "name": "MUSEONACIONALDELPRADO",
+                    "fullname": "Museo Nacional del Prado",
+                    "state": null
+                },
+                {
+                    "zipcode": "1224",
+                    "country": "The Philippines",
+                    "begindate": "2024-09-09",
+                    "enddate": "2025-02-23",
+                    "address2": "Greenbelt Park",
+                    "city": "Makati City",
+                    "address1": "Makati Avenue corner De La Rosa Street",
+                    "venueid": 70558,
+                    "ishamvenue": 0,
+                    "name": "AYALAMUSEUM",
+                    "fullname": "Ayala Museum",
+                    "state": null
+                }
+            ],
+            "id": 6212,
+            "lastupdate": "2025-01-27T13:06:47-0500"
+        },
+        {
+            "shortdescription": null,
+            "htmldescription": null,
+            "begindate": "2024-11-27",
+            "color": null,
+            "description": null,
+            "exhibitionid": 6310,
+            "title": "Rembrandt's Amsterdam: Golden Times?",
+            "temporalorder": 4960,
+            "url": "https://www.harvardartmuseums.org/visit/exhibitions/6310",
+            "textiledescription": null,
+            "enddate": "2025-03-23",
+            "venues": [
+                {
+                    "zipcode": "60596",
+                    "country": "Germany",
+                    "begindate": "2024-11-27",
+                    "enddate": "2025-03-23",
+                    "address2": null,
+                    "city": "Frankfurt am Main",
+                    "address1": "Dürerstrasse 2",
+                    "venueid": 54304,
+                    "ishamvenue": 0,
+                    "name": "STÄDELMUSEUM",
+                    "fullname": "Städel Museum",
+                    "state": null
+                }
+            ],
+            "id": 6310,
+            "lastupdate": "2025-01-27T13:06:47-0500"
+        },
+        {
+            "shortdescription": null,
+            "htmldescription": null,
+            "begindate": "2024-09-20",
+            "color": null,
+            "description": null,
+            "exhibitionid": 6343,
+            "title": "Otto Mueller",
+            "temporalorder": 4952,
+            "url": "https://www.harvardartmuseums.org/visit/exhibitions/6343",
+            "textiledescription": null,
+            "enddate": "2025-02-02",
+            "venues": [
+                {
+                    "zipcode": null,
+                    "country": null,
+                    "begindate": "2024-09-20",
+                    "enddate": "2025-02-02",
+                    "address2": null,
+                    "city": null,
+                    "address1": null,
+                    "venueid": 64267,
+                    "ishamvenue": 0,
+                    "name": "LWL-MUSEUMFÜRKUNSTUNDKULTUR",
+                    "fullname": "LWL-Museum für Kunst und Kultur",
+                    "state": null
+                }
+            ],
+            "id": 6343,
+            "lastupdate": "2025-01-27T13:06:47-0500"
+        },
+        {
+            "shortdescription": null,
+            "htmldescription": null,
+            "begindate": "2024-10-19",
+            "color": null,
+            "description": null,
+            "exhibitionid": 6389,
+            "title": "Samurai: The Making of a Warrior",
+            "temporalorder": 4958,
+            "url": "https://www.harvardartmuseums.org/visit/exhibitions/6389",
+            "textiledescription": null,
+            "enddate": "2025-02-02",
+            "venues": [
+                {
+                    "zipcode": null,
+                    "country": null,
+                    "begindate": "2024-10-19",
+                    "enddate": "2025-02-02",
+                    "address2": null,
+                    "city": null,
+                    "address1": null,
+                    "venueid": 44,
+                    "ishamvenue": 0,
+                    "name": "NORTHCAROLINAMUSEUMOFART",
+                    "fullname": "North Carolina Museum of Art",
+                    "state": null
+                }
+            ],
+            "id": 6389,
+            "lastupdate": "2025-01-27T13:06:47-0500"
+        },
+        {
+            "shortdescription": null,
+            "htmldescription": null,
+            "begindate": "2024-10-17",
+            "color": null,
+            "description": null,
+            "exhibitionid": 6404,
+            "title": "Measuring Difference",
+            "temporalorder": 4957,
+            "url": "https://www.harvardartmuseums.org/visit/exhibitions/6404",
+            "textiledescription": null,
+            "enddate": "2025-08-30",
+            "venues": [
+                {
+                    "zipcode": null,
+                    "country": null,
+                    "begindate": "2024-10-17",
+                    "enddate": "2025-08-30",
+                    "address2": null,
+                    "city": null,
+                    "address1": null,
+                    "venueid": 10033,
+                    "ishamvenue": 0,
+                    "name": "THECOLLECTIONOFHISTORICALSCIENTI",
+                    "fullname": "The Collection of Historical Scientific Instruments",
+                    "state": null
+                }
+            ],
+            "id": 6404,
+            "lastupdate": "2025-01-27T13:06:47-0500"
+        },
+        {
+            "shortdescription": null,
+            "htmldescription": null,
+            "begindate": "2025-01-01",
+            "color": null,
+            "description": null,
+            "exhibitionid": 6420,
+            "title": "Davis Museum Permanent Gallery reinstallation",
+            "temporalorder": 4961,
+            "url": "https://www.harvardartmuseums.org/visit/exhibitions/6420",
+            "textiledescription": null,
+            "enddate": "2027-01-01",
+            "venues": [
+                {
+                    "zipcode": "02481",
+                    "country": null,
+                    "begindate": "2025-01-01",
+                    "enddate": "2027-01-01",
+                    "address2": null,
+                    "city": "Wellesley",
+                    "address1": "106 Central Street",
+                    "venueid": 12313,
+                    "ishamvenue": 0,
+                    "name": "DAVISMUSEUMATWELLESLEYCOLLEGE",
+                    "fullname": "Davis Museum at Wellesley College",
+                    "state": "MA"
+                }
+            ],
+            "id": 6420,
+            "lastupdate": "2025-01-27T13:06:47-0500"
+        },
+        {
+            "shortdescription": null,
+            "htmldescription": null,
+            "begindate": "2025-01-22",
+            "color": null,
+            "description": null,
+            "exhibitionid": 6422,
+            "title": "Cimabue. Aux origines de la peinture moderne en Occident",
+            "temporalorder": 4962,
+            "url": "https://www.harvardartmuseums.org/visit/exhibitions/6422",
+            "textiledescription": null,
+            "enddate": "2025-05-12",
+            "venues": [
+                {
+                    "zipcode": "75058",
+                    "country": "France",
+                    "begindate": "2025-01-22",
+                    "enddate": "2025-05-12",
+                    "address2": null,
+                    "city": "Paris  Cedex 01",
+                    "address1": "34-36 Quai du Louvre",
+                    "venueid": 1238,
+                    "ishamvenue": 0,
+                    "name": "MUSÉEDULOUVRE",
+                    "fullname": "Musée du Louvre",
+                    "state": null
+                }
+            ],
+            "id": 6422,
+            "lastupdate": "2025-01-27T13:06:47-0500"
+        },
+        {
+            "shortdescription": null,
+            "htmldescription": null,
+            "begindate": "2024-07-26",
+            "color": null,
+            "description": null,
+            "exhibitionid": 6436,
+            "title": "Museum of Fine Arts, Boston - Permanent Collection Gallery Installation",
+            "temporalorder": 4943,
+            "url": "https://www.harvardartmuseums.org/visit/exhibitions/6436",
+            "textiledescription": null,
+            "enddate": "2025-07-25",
+            "venues": [
+                {
+                    "zipcode": null,
+                    "country": null,
+                    "begindate": "2024-07-26",
+                    "enddate": "2025-07-25",
+                    "address2": null,
+                    "city": null,
+                    "address1": null,
+                    "venueid": 1269,
+                    "ishamvenue": 0,
+                    "name": "MUSEUMOFFINEARTS,BOSTON",
+                    "fullname": "Museum of Fine Arts, Boston",
+                    "state": null
+                }
+            ],
+            "id": 6436,
+            "lastupdate": "2025-01-27T13:06:47-0500"
+        }
+    ]
+}

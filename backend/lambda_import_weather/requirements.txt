@@ -1,0 +1,8 @@
+requests
+pydantic
+boto3
+openmeteo-requests
+requests-cache
+retry-requests
+numpy
+pandas

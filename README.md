@@ -122,8 +122,25 @@ Require all granted
 
 
 
- docker run --rm -v $(pwd)/api-lambda:/api-lambda -w /api-lambda amazonlinux:latest \
+docker run --rm -v $(pwd)/api_lambda:/api_lambda -w /api_lambda amazonlinux:latest \
     bash -c "yum install -y python3-pip && pip3 install -r requirements.txt -t package/"
 
-   docker run --rm -v $(pwd)/import-lambda:/import-lambda -w /import-lambda amazonlinux:latest \
+docker run --rm -v $(pwd)/lambda_import_exhibitions:/lambda_import_exhibitions -w /lambda_import_exhibitions amazonlinux:latest \
     bash -c "yum install -y python3-pip && pip3 install -r requirements.txt -t package/"
+
+docker run --rm -v $(pwd)/lambda_import_weather:/lambda_import_weather -w /lambda_import_weather amazonlinux:latest \
+    bash -c "yum install -y python3-pip && pip3 install -r requirements.txt -t package/"
+
+
+need to export AWS_ACCOUNT_ID that you will deploy to:
+
+export AWS_ACCOUNT_ID=<your_aws_account_id>
+
+
+Created the API Secret by hand in AWS to avoid committing it to GitHub.
+
+
+clean 
+rm -rf api_lambda/package
+rm -rf lambda_import_weather/package
+rm -rf lambda_import_exhibitions/package

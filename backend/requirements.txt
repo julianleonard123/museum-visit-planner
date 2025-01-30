@@ -1,0 +1,5 @@
+aws-cdk-lib==2.177.0
+constructs>=10.0.0,<11.0.0
+-r requirements-dev.txt
+-r import-weather-lambda/requirements.txt
+-r import-exhibitions-lambda/requirements.txtaws ssm get-parameter --name /cdk-bootstrap/app/version

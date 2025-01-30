@@ -4,6 +4,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from mangum import Mangum
 
+from backend import settings
+
 app = FastAPI()
 
 # ✅ Add CORS middleware to allow access
@@ -15,12 +17,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-DYNAMODB_TABLE = os.getenv("DYNAMODB_TABLE", "mvp_exhibitions")
-AWS_REGION = os.getenv("AWS_REGION", "eu-central-1")
-
 # Create DynamoDB client
-dynamodb = boto3.resource("dynamodb", region_name=AWS_REGION)
-table = dynamodb.Table(DYNAMODB_TABLE)
+dynamodb = boto3.resource("dynamodb", region_name=settings.AWS_REGION)
+table = dynamodb.Table(settings.DYNAMODB_TABLE)
 
 @app.get("/exhibitions")
 def get_exhibitions():
