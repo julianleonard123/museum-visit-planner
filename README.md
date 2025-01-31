@@ -6,6 +6,8 @@ Deployed frontend: [link](https://main.d1e551jiip3ocv.amplifyapp.com/)
 
 Deployed backend API: [link](https://onunlky5ka.execute-api.eu-central-1.amazonaws.com/prod/docs#)
 
+: ![Screenshot](/screenshot.png)
+
 This repo contains two projects:
 
 1. A serverless `backend` application, written in Python, that includes:
