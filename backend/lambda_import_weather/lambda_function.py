@@ -35,15 +35,17 @@ def lambda_handler(event, context):
 
     for exhibition in exhibitions:
         for venue in exhibition.venues:
-            if venue.city:
+            if venue and venue.city:
                 lat, long = get_lat_lon(venue.city)
                 exhibition.weather = get_weather(lat, long)
                 break
         put_item(exhibition)
 
+    return exhibitions
 
 def get_lat_lon(city_name):
     url = settings.GEOCODING_API_URL + city_name
+    print(f"Attempting to get lat and long for city: {city_name}, url: {url}")
     response = requests.get(url)
     
     if response.status_code == 200:
@@ -52,9 +54,9 @@ def get_lat_lon(city_name):
             lon = float(response.json()["results"][0]["longitude"])
             return lat, lon
         else:
-            return None
+            return None, None
     else:
-        return None
+        return None, None
     
 
 def get_weather(lat, long):
@@ -70,7 +72,12 @@ def get_weather(lat, long):
         "timezone": "Europe/Berlin",
         "forecast_days": 2
     }
+    print(f"Calling weather api for lat: {lat} and long {long}")
     responses = openmeteo.weather_api(url, params=params)
+
+    if responses is None or len(responses) == 0:
+        return Weather(forecast=['Not available', 'Not available'])
+    
     response = responses[0]
     
     daily = response.Daily()
@@ -79,7 +86,7 @@ def get_weather(lat, long):
     forecast = []
     for code in daily_weather_code:
         forecast.append(decode_weather_code(code))
-        print(decode_weather_code(code))
+        print(f"Weather code: {decode_weather_code(code)}")
 
     return Weather(forecast=forecast)
 

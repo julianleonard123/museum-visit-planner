@@ -26,6 +26,7 @@ This repo contains two projects:
     2. AWS DynamoDB (via boto3 client)
     3. AWS Api Gateway
     4. AWS Secrets Manager
+    5. AWS Event Bridge Rules
 2. Infrastructure as Code
     1. AWS CDK
 3. Frontend:

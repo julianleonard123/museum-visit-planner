@@ -7,7 +7,9 @@ from aws_cdk import (
     aws_dynamodb as dynamodb,
     aws_lambda as lambda_,
     aws_apigateway as apigateway,
-    aws_secretsmanager as secretsmanager
+    aws_secretsmanager as secretsmanager,
+    aws_events as events,
+    aws_events_targets as targets
 )
 # from aws_cdk.aws_lambda_python_alpha import PythonFunction
 from constructs import Construct
@@ -59,6 +61,21 @@ class AppStack(Stack):
             timeout=Duration.seconds(60),
             architecture=lambda_.Architecture.ARM_64
         )
+
+        # Event Bridge rule to trigger the import exhibitions lambda on a daily schedule:
+        hourly_event_rule = events.Rule(
+            self, "hourlyRule",
+            schedule=events.Schedule.rate(Duration.days(1)),  # Trigger once a day
+        )
+
+        hourly_event_rule.add_target(targets.LambdaFunction(import_exhibitions_lambda))
+
+        # Event Bridge rule to trigger the import weather lambda on an hourly schedule:
+        daily_event_rule = events.Rule(
+            self, "dailyRule",
+            schedule=events.Schedule.rate(Duration.hours(1)),  # Trigger once an hour
+        )
+        daily_event_rule.add_target(targets.LambdaFunction(import_weather_lambda))
 
         secret = secretsmanager.Secret.from_secret_name_v2(self, settings.HARVARD_ART_MUSEUMS_API_KEY_SECRET_NAME, settings.HARVARD_ART_MUSEUMS_API_KEY_SECRET_NAME)
         secret.grant_read(import_exhibitions_lambda)
