@@ -1,4 +1,3 @@
-import os
 import boto3
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -6,7 +5,7 @@ from mangum import Mangum
 
 import settings
 
-app = FastAPI()
+app = FastAPI(root_path="/prod")
 
 # Add CORS middleware to allow access to openapi spec.
 app.add_middleware(
