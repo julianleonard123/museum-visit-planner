@@ -4,7 +4,7 @@ Welcome to the Museum Visit Planner (named since this is an MVP minimal viable p
 
 Deployed frontend: [link](https://main.d1e551jiip3ocv.amplifyapp.com/)
 
-Deployed backend API spec: [link](https://onunlky5ka.execute-api.eu-central-1.amazonaws.com/prod/)
+Deployed backend API: [link](https://onunlky5ka.execute-api.eu-central-1.amazonaws.com/prod/exhibitions)
 
 This repo contains two projects:
 
