@@ -29,11 +29,11 @@ function App() {
         <ul>
           {data.map((item, index) => (
             <li key={index}>
-              <div>Title: {item.title}</div>
+              <div><b>Title:</b> {item.title}</div>
               <div>{item.shortdescription}</div>
-              <div>{item.venues[0].city}</div>
+              <div><b>Location:</b> {item.venues[0].city}</div>
                 {item.weather?.forecast.map((weather_condition, index1) => (
-                  <div>{weather_condition}</div>
+                  <div key={index1}>{weather_condition}</div>
                 ))}
             </li>  // Render items from API response
           ))}

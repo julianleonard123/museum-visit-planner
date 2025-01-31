@@ -76,7 +76,7 @@ def get_weather(lat, long):
     responses = openmeteo.weather_api(url, params=params)
 
     if responses is None or len(responses) == 0:
-        return Weather(forecast=['Not available', 'Not available'])
+        return Weather(forecast=['Weather Forecast Not available'])
     
     response = responses[0]
     
@@ -96,10 +96,24 @@ weather_code_map = {
     2: "Partly cloudy",
     3: "Mostly cloudy",
     45: "Fog",
+    48: "Depositing rime fog",
     51: "Light rain",
+    53: "Moderate rain",
+    55: "Heavy rain",
+    56: "Light freezing rain",
+    57: "Heavy freezing rain",
     61: "Moderate rain",
+    63: "Heavy rain",
+    65: "Rain showers",
     71: "Heavy rain",
+    73: "Moderate snow",
+    75: "Heavy snow",
+    77: "Snow grains",
     80: "Thunderstorms",
+    81: "Moderate thunderstorms",
+    82: "Heavy thunderstorms",
+    85: "Moderate snow showers",
+    86: "Heavy snow showers",
     95: "Severe thunderstorms",
     96: "Hail",
     99: "Severe hail"
@@ -107,4 +121,5 @@ weather_code_map = {
 
 # Function to decode weather code
 def decode_weather_code(code):
+    print(f"Decoding weather code: {code}")
     return weather_code_map.get(code, "Unknown weather code")

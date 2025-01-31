@@ -26,7 +26,7 @@ class TestImportWeather(unittest.TestCase):
         # Assertions
         self.assertEqual(actual_lat, 46.516)
         self.assertEqual(actual_lon, 6.63282)
-        mock_requests_get.assert_called_once_with("https://geocoding-api.open-meteo.com/v1/search?&count=1name=Lausanne")
+        mock_requests_get.assert_called_once_with("https://geocoding-api.open-meteo.com/v1/search?name=Lausanne")
         
     @patch("lambda_import_weather.lambda_function.requests.get")  # Mock the requests.get function
     def test_get_weather_success(self, mock_requests_get):

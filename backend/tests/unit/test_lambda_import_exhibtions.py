@@ -28,7 +28,7 @@ class TestGetExhibitions(unittest.TestCase):
         self.assertEqual(result[0].title, "Brilliant Exiles: American Women in Paris, 1900-1939")
         self.assertEqual(result[0].temporalorder, 4937 )
         self.assertEqual(result[0].venues[0].city, "Washington" )
-        mock_requests_get.assert_called_once_with("https://api.harvardartmuseums.org/exhibition?status=current&page=1&apikey=mock_api_key")  # Ensure correct API call
+        mock_requests_get.assert_called_once_with("https://api.harvardartmuseums.org/exhibition?status=current&page=1&size=100&apikey=mock_api_key")  # Ensure correct API call
         mock_get_secret.assert_called_once()  # Ensure get_secret() is called
 
     @patch("lambda_import_exhibitions.lambda_function.requests.get")  # Mock the requests.get function
