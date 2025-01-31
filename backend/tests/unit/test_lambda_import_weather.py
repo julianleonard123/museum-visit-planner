@@ -10,7 +10,7 @@ class TestImportWeather(unittest.TestCase):
         """Test successful API response using a mock JSON file."""
         
         # Load static JSON data from a file
-        with open("backend/tests/test_data/geocode.json", "r") as file:
+        with open("tests/test_data/geocode.json", "r") as file:
             mock_json_data = json.load(file)
  
         # Configure mock response
@@ -32,7 +32,7 @@ class TestImportWeather(unittest.TestCase):
         """Test successful API response using a mock JSON file."""
         
         # Load static JSON data from a file
-        with open("backend/tests/test_data/geocode.json", "r") as file:
+        with open("tests/test_data/geocode.json", "r") as file:
             mock_json_data = json.load(file)
  
         # Configure mock response
@@ -48,10 +48,8 @@ class TestImportWeather(unittest.TestCase):
         weather = get_weather(lat, long)
 
         # Assertions
-        self.assertEqual(actual_lat, 46.516)
-        self.assertEqual(actual_lon, 6.63282)
-        mock_requests_get.assert_called_once_with("https://geocoding-api.open-meteo.com/v1/search?&count=1name=Lausanne")
-       
+        self.assertEqual(len(weather.forecast), 2)
+        
 
 if __name__ == "__main__":
     unittest.main()

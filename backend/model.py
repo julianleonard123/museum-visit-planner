@@ -1,6 +1,6 @@
 
 from datetime import date
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from typing import List, Optional
 
 class Weather(BaseModel):
@@ -18,8 +18,6 @@ class Exhibition(BaseModel):
     title: Optional[str]
     shortdescription: Optional[str]
     temporalorder:  Optional[int]
-    # startDate: Optional[date]
-    # endDate: Optional[date] 
     venues: Optional[List[Venue]]
-    weather: Optional[Weather]
+    weather: Optional[Weather] = None
 

@@ -32,24 +32,23 @@ docker-install:
 
 # copy lambda code and shared modules to package directories for later use by CDK.
 copy-files:
-	mkdir -p lambda_api/package/backend
 	cp lambda_api/app.py lambda_api/package/app.py
 	cp settings.py lambda_api/package/settings.py
 	cp model.py lambda_api/package/model.py
 	
-	mkdir -p lambda_import_exhibitions/package/backend/
 	cp lambda_import_exhibitions/lambda_function.py lambda_import_exhibitions/package/lambda_function.py
-	cp settings.py lambda_import_exhibitions/package/backend/settings.py
-	cp model.py lambda_import_exhibitions/package/backend/model.py
+	cp settings.py lambda_import_exhibitions/package/settings.py
+	cp model.py lambda_import_exhibitions/package/model.py
 
-	mkdir -p lambda_import_weather/package/backend/
 	cp lambda_import_weather/lambda_function.py lambda_import_weather/package/lambda_function.py
-	cp settings.py lambda_import_weather/package/backend/settings.py
-	cp model.py lambda_import_weather/package/backend/model.py
+	cp settings.py lambda_import_weather/package/settings.py
+	cp model.py lambda_import_weather/package/model.py
+
+test: install
+	$(ACTIVATE) && pytest ./tests/unit/test_*
 
 clean:
 	rm -rf $(VENV)
 	rm -rf lambda_api/package
 	rm -rf lambda_import_weather/package
 	rm -rf lambda_import_exhibitions/package
-	

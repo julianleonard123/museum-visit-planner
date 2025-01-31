@@ -24,3 +24,5 @@ backend/api/package
 **/node_modules/*
 
 .cache.sqllite
+
+.vscode

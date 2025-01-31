@@ -3,8 +3,8 @@ import os
 import requests
 import boto3
 import openmeteo_requests
-from backend import settings
-from backend.model import Exhibition, Weather
+import settings
+from model import Exhibition, Weather
 import pandas as pd
 from retry_requests import retry
 

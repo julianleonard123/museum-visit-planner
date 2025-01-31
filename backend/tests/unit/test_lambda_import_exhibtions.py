@@ -2,8 +2,7 @@ import unittest
 from unittest.mock import patch, MagicMock
 import json
 import requests
-from lambda_import_exhibitions.lambda_function import get_secret, get_exhibitions_from_api
-import lambda_import_exhibitions.lambda_function
+from lambda_import_exhibitions.lambda_function import get_exhibitions_from_api
 
 class TestGetExhibitions(unittest.TestCase):
     
@@ -13,7 +12,7 @@ class TestGetExhibitions(unittest.TestCase):
         """Test successful API response using a mock JSON file."""
         
         # Load static JSON data from a file
-        with open("backend/tests/test_data/exhibitions.json", "r") as file:
+        with open("tests/test_data/exhibitions.json", "r") as file:
             mock_json_data = json.load(file)
  
         # Configure mock response

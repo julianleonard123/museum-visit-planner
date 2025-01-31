@@ -2,8 +2,8 @@ import json
 import requests
 import boto3
 from botocore.exceptions import ClientError
-from backend import settings
-from backend.model import Exhibition
+import settings
+from model import Exhibition
 
 dynamodb = boto3.resource("dynamodb", region_name=settings.AWS_REGION)
 table = dynamodb.Table(settings.DYNAMODB_TABLE)
