@@ -5,7 +5,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const EXHIBITIONS_API = "https://ug5u8avkf7.execute-api.eu-central-1.amazonaws.com/prod/exhibitions";
+    const EXHIBITIONS_API = "https://onunlky5ka.execute-api.eu-central-1.amazonaws.com/prod/exhibitions";
     // Fetch data using the native fetch API
     fetch(EXHIBITIONS_API)
       .then((response) => response.json())

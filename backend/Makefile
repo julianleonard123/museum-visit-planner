@@ -31,11 +31,11 @@ docker-install:
     bash -c "yum install -y python3-pip && pip3 install -r requirements.txt -t package/"
 
 # copy lambda code and shared modules to package directories for later use by CDK.
-copy-files: docker-install
+copy-files:
 	mkdir -p lambda_api/package/backend
 	cp lambda_api/app.py lambda_api/package/app.py
-	cp settings.py lambda_api/package/backend/settings.py
-	cp model.py lambda_api/package/backend/model.py
+	cp settings.py lambda_api/package/settings.py
+	cp model.py lambda_api/package/model.py
 	
 	mkdir -p lambda_import_exhibitions/package/backend/
 	cp lambda_import_exhibitions/lambda_function.py lambda_import_exhibitions/package/lambda_function.py

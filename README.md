@@ -1,10 +1,10 @@
 # Museum Visit Planner
 
 Welcome to the Museum Visit Planner (named since this is an MVP minimal viable product :) ).   This application will let you plan a trip to a museum exhibition, including weather forecast information for the exhibition location.
- p
+
 Deployed frontend: [link](https://main.d1e551jiip3ocv.amplifyapp.com/)
 
-Deployed backend API spec: [link](https://3ad08czph0.execute-api.eu-central-1.amazonaws.com/prod/)
+Deployed backend API spec: [link](https://onunlky5ka.execute-api.eu-central-1.amazonaws.com/prod/)
 
 This repo contains two projects:
 
