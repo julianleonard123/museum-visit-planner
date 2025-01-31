@@ -6,13 +6,13 @@ Deployed frontend: [link](https://main.d1e551jiip3ocv.amplifyapp.com/)
 
 Deployed backend API: [link](https://onunlky5ka.execute-api.eu-central-1.amazonaws.com/prod/docs#)
 
-: ![Screenshot](/screenshot.png)
+![Screenshot](/screenshot.png)
 
 This repo contains two projects:
 
 1. A serverless `backend` application, written in Python, that includes:
       1. An AWS Lambda to retrieve Exhbition data from the [Harvard Art Museum API](https://api.harvardartmuseums.org/") and store in DynamoDB.
-      2. An AWS Lambda to retrieve weather data for each Exhbitiion venue from [Open Meteo](https://open-meteo.com/), and enrich the items in DynamoDB.
+      2. An AWS Lambda to retrieve weather data for each Exhbition venue from [Open Meteo](https://open-meteo.com/), and enrich the items in DynamoDB.
       3. An AWS Lambda running FastAPI to expose rest based API, via an AWS API Gateway.
 
 2. A `frontend` application, written using React + Vite template, that queries the Rest API backend.
