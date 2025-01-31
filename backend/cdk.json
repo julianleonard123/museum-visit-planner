@@ -15,7 +15,6 @@
     ]
   },
   "context": {
-    "@aws-cdk/core:bootstrapQualifier": "mvp",
     "aws-cdk:enableDiffNoFail": "true",
     "region": "eu-central-1",
     "account": "247411243287",
