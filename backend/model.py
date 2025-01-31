@@ -12,6 +12,9 @@ class Venue(BaseModel):
     fullname: Optional[str]
     city: Optional[str]
     state: Optional[str]
+
+class Poster(BaseModel):
+    imageurl: Optional[str]
     
 class Exhibition(BaseModel):
     id: int
@@ -19,5 +22,6 @@ class Exhibition(BaseModel):
     shortdescription: Optional[str]
     temporalorder:  Optional[int]
     venues: Optional[List[Venue]]
+    poster: Optional[Poster] = None
     weather: Optional[Weather] = None
 
