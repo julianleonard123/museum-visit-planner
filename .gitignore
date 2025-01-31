@@ -22,3 +22,5 @@ backend/api/package
 
 **/package/*
 **/node_modules/*
+
+.cache.sqllite

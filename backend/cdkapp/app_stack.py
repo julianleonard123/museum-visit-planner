@@ -80,6 +80,7 @@ class AppStack(Stack):
         secret.grant_read(import_exhibitions_lambda)
         
         table.grant_write_data(import_exhibitions_lambda)
+        table.grant_read_data(import_weather_lambda)
         table.grant_write_data(import_weather_lambda)
         table.grant_read_data(fastapi_lambda)
 
