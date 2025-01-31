@@ -65,7 +65,7 @@ class AppStack(Stack):
         # Event Bridge rule to trigger the import exhibitions lambda on a daily schedule:
         hourly_event_rule = events.Rule(
             self, "hourlyRule",
-            schedule=events.Schedule.rate(Duration.days(1)),  # Trigger once a day
+            schedule=events.Schedule.rate(Duration.hours(1)),  # Trigger once an hour
         )
 
         hourly_event_rule.add_target(targets.LambdaFunction(import_exhibitions_lambda))
@@ -73,7 +73,7 @@ class AppStack(Stack):
         # Event Bridge rule to trigger the import weather lambda on an hourly schedule:
         daily_event_rule = events.Rule(
             self, "dailyRule",
-            schedule=events.Schedule.rate(Duration.hours(1)),  # Trigger once an hour
+            schedule=events.Schedule.rate(Duration.days(1)),  # Trigger once a day
         )
         daily_event_rule.add_target(targets.LambdaFunction(import_weather_lambda))
 
