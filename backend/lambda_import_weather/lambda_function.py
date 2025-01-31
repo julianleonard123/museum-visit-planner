@@ -4,7 +4,7 @@ import requests
 import boto3
 import openmeteo_requests
 from backend import settings
-from backend.model import Exhibition
+from backend.model import Exhibition, Weather
 import pandas as pd
 from retry_requests import retry
 
@@ -34,9 +34,9 @@ def lambda_handler(event, context):
     exhibitions = get_exhibitions()
 
     for exhibition in exhibitions:
-        for venue in exhibition["venues"]:
-            if venue["city"]:
-                lat, long = get_lat_lon(venue["city"])
+        for venue in exhibition.venues:
+            if venue.city:
+                lat, long = get_lat_lon(venue.city)
                 exhibition.weather = get_weather(lat, long)
                 break
         put_item(exhibition)
@@ -81,7 +81,7 @@ def get_weather(lat, long):
         forecast.append(decode_weather_code(code))
         print(decode_weather_code(code))
 
-    return forecast
+    return Weather(forecast=forecast)
 
 weather_code_map = {
     0: "Clear sky",

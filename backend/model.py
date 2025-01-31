@@ -4,9 +4,7 @@ from pydantic import BaseModel, Field
 from typing import List, Optional
 
 class Weather(BaseModel):
-    city: str = Optional[str]
-    temperature: Optional[float]
-    humidity: Optional[float]
+    forecast: Optional[List[str]]
     
 class Venue(BaseModel):
     venueid: int
@@ -23,5 +21,5 @@ class Exhibition(BaseModel):
     # startDate: Optional[date]
     # endDate: Optional[date] 
     venues: Optional[List[Venue]]
-    # weather: Optional[Weather]
+    weather: Optional[Weather]
 

@@ -3,7 +3,7 @@ VENV := venv
 PYTHON := python3
 ACTIVATE := source $(VENV)/bin/activate
 PWD := $(shell pwd)
-.PHONY: all venv install run clean
+.PHONY: venv clean
 
 venv:
 	$(PYTHON) -m venv $(VENV)

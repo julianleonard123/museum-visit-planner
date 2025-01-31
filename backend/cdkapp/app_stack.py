@@ -27,22 +27,6 @@ class AppStack(Stack):
             removal_policy=RemovalPolicy.DESTROY
         )
 
-        # copy the lambda source code files into the package folder so it sits next to the installed dependencies when packaged.
-        subprocess.run(["mkdir", "lambda_api/package/backend/"])
-        subprocess.run(["cp", "lambda_api/app.py", "lambda_api/package/app.py"])
-        subprocess.run(["cp", "settings.py", "lambda_api/package/backend/settings.py"])
-        subprocess.run(["cp", "model.py", "lambda_api/package/backend/model.py"])
-        
-        subprocess.run(["mkdir", "lambda_import_exhibitions/package/backend/"])
-        subprocess.run(["cp", "lambda_import_exhibitions/lambda_function.py", "lambda_import_exhibitions/package/lambda_function.py"])
-        subprocess.run(["cp", "settings.py", "lambda_import_exhibitions/package/backend/settings.py"])
-        subprocess.run(["cp", "model.py", "lambda_import_exhibitions/package/backend/model.py"])
-
-        subprocess.run(["mkdir", "lambda_import_weather/package/backend/"])
-        subprocess.run(["cp", "lambda_import_weather/lambda_function.py", "lambda_import_weather/package/lambda_function.py"])
-        subprocess.run(["cp", "settings.py", "lambda_import_weather/package/backend/settings.py"])
-        subprocess.run(["cp", "model.py", "lambda_import_weather/package/backend/model.py"])
-        
         # Define the API Lambda function
         fastapi_lambda = lambda_.Function(
             self, "getExhibitionsLambda",
