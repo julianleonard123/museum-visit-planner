@@ -82,6 +82,8 @@ class TestImportWeather(unittest.TestCase):
             title="Exhibition 1",
             temporalorder=1,
             shortdescription="Description 1",
+            begindate="2025-02-02",
+            enddate="2025-02-14",
             venues=venues,
             weather=None
         ))
@@ -91,6 +93,8 @@ class TestImportWeather(unittest.TestCase):
                 {
                     "id": 1,
                     "title": "Art of the Future",
+                    "begindate": "2025-02-02",
+                    "enddate": "2025-02-14",
                     "shortdescription": "A glimpse into futuristic art",
                     "temporalorder": 2024,
                     "venues": [{"venueid": 10, "name": "Modern Art Museum", "fullname": "Modern Art Museum Full", "city": "asdf", "state": "VD"}],
@@ -99,6 +103,8 @@ class TestImportWeather(unittest.TestCase):
                 {
                     "id": 2,
                     "title": "Ancient Wonders",
+                    "begindate": "2025-02-02",
+                    "enddate": "2025-02-14",
                     "shortdescription": "Discover the beauty of ancient civilizations",
                     "temporalorder": 2023,
                     "venues": [{"venueid": 11, "name" : "History Museum", "fullname": "History Museum Full", "city": "asdf", "state": "VD"}],

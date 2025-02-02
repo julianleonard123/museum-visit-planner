@@ -64,6 +64,9 @@ function App() {
                 >
                   {item.venues[0].city}
                 </a></p>
+              <p className="text-sm text-gray-500"><b>End Date: </b>
+                  {item.enddate ? new Date(item.enddate).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" }) : "N/A"}
+                </p>
               {item.weather?.forecast.length > 1 && (
                 <div className="mt-2">
                   <b className="text-gray-600">Weather Forecast</b>

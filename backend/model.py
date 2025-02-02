@@ -19,6 +19,8 @@ class Poster(BaseModel):
 class Exhibition(BaseModel):
     id: int
     title: Optional[str]
+    begindate: Optional[date]
+    enddate: Optional[date]
     shortdescription: Optional[str]
     temporalorder:  Optional[int]
     venues: Optional[List[Venue]]
