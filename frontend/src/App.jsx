@@ -51,7 +51,7 @@ function App() {
               className="bg-white p-5 rounded-2xl shadow-lg border border-gray-200"
             >
               <img
-                src={item.poster?.imageurl}
+                src={item.poster ?  item.poster?.imageurl : "/default_image.jpeg"}
               />
               <h2 className="text-xl font-semibold text-gray-700 mb-2">{item.title}</h2>
               <p className="text-gray-600 mb-3">{item.shortdescription}</p>
