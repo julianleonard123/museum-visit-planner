@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState(""); // Add state for filter criteria
-  const EXHIBITIONS_API = "https://onunlky5ka.execute-api.eu-central-1.amazonaws.com/prod/exhibitions";
+  const EXHIBITIONS_API = "https://32jf7degxh.execute-api.eu-central-1.amazonaws.com/prod/exhibitions";
   const GOOGLE_DIRECTIONS_API = "https://www.google.com/maps/dir/?api=1&destination="
     
   useEffect(() => {
